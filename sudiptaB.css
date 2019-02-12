@@ -85,6 +85,10 @@ logo{
   font-size: 17px;
 }
 
+.aboutme{
+  text-align: left;
+}
+
 /*.portfolio{
   display: inline;
   margin: 20px;
@@ -107,19 +111,19 @@ logo{
 }*/
 
 
-.row {
+/*.row {*/
   /*display: flex;
   padding-bottom: 50px;
   grid-row-gap: 50px;
   grid-column-gap: 50px;*/
-  display: grid;
+ /* display: grid;
   grid-template-columns: auto auto auto auto;
   grid-row-gap: 50px;
   grid-column-gap: 50px;
   padding: 10px;
 
 }
-
+*/
 /*.column1 {
   flex: 33.33%;
   padding: 50px 25px;
@@ -132,3 +136,18 @@ logo{
   flex: 33.33%;
   padding: 50px 25px;
 }*/
+
+.grid { 
+  display: grid;
+  grid-template-columns: 400px 400px 400px 400px;
+  grid-template-rows: 400px 400px 400px 400px;
+  grid-gap: 20px;
+  align-items: stretch;
+  justify-content: center;
+  }
+.grid img {
+  border: 1px solid black;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  max-width: 100%;
+  max-height: 100%;
+}
