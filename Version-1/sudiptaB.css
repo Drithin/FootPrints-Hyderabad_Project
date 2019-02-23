@@ -1,0 +1,153 @@
+/*Declaring Box Model*/
+* {
+  box-sizing: border-box;
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Verdana, sans-serif;
+   margin:0;
+   text-align: center;
+ }
+
+
+
+/*.logo{
+  font-size: 200px;
+  text-align: left;
+  float: left;
+  padding-left: 10px;
+  margin: 0 auto;
+}
+
+.logo a{
+  color: #f2f2f2;
+  padding: 20px 16px;
+  text-decoration: none;
+
+/*}*/
+ .bg-img{
+  background-image: url("b-w-1.jpeg");
+  min-width: 380px;
+  height: 800px;*/
+
+  background-position: center;
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+  position: relative;
+}
+
+logo{
+  font-size: 200px;
+  text-align: left;
+  float: left;
+  padding-left: 20px 16px;
+  margin: 0 auto;
+}
+
+
+#logo{
+  float:left;
+}
+
+#logo a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 200px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 45px;
+}
+ .container {
+  margin: 20px;
+  width: auto; 
+  /*position: fixed;*/
+  text-align: right;
+
+
+}
+
+.topnav {
+  overflow: hidden; 
+  text-align: right;
+
+  
+}
+
+.topnav a {
+  
+  color: #f2f2f2;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.aboutme{
+  text-align: left;
+}
+
+/*.portfolio{
+  display: inline;
+  margin: 20px;
+  
+  position: relative;
+  bottom: 15px;
+}*/
+
+/*.column {
+  float: left;
+  width: 33.33%;
+
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}*/
+
+
+/*.row {*/
+  /*display: flex;
+  padding-bottom: 50px;
+  grid-row-gap: 50px;
+  grid-column-gap: 50px;*/
+ /* display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-row-gap: 50px;
+  grid-column-gap: 50px;
+  padding: 10px;
+
+}
+*/
+/*.column1 {
+  flex: 33.33%;
+  padding: 50px 25px;
+}
+.column2 {
+  flex: 33.33%;
+  padding: 50px 25px;
+}
+.column3 {
+  flex: 33.33%;
+  padding: 50px 25px;
+}*/
+
+.grid { 
+  display: grid;
+  grid-template-columns: 400px 400px 400px 400px;
+  grid-template-rows: 400px 400px 400px 400px;
+  grid-gap: 20px;
+  align-items: stretch;
+  justify-content: center;
+  }
+.grid img {
+  border: 1px solid black;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  max-width: 100%;
+  max-height: 100%;
+}
