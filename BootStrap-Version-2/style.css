@@ -50,6 +50,7 @@ body{
   width: 100%;
   height: 4px;
   background: rgb(0,0,0);
+  z-index: 10;
 }
 
 /* The progress bar (scroll indicator) */
@@ -58,6 +59,7 @@ body{
   height: 4px;
   background: rgb(255,255,255);
   width: 0%;
+  z-index: 10;
 }
 
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
