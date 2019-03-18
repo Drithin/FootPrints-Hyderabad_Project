@@ -183,16 +183,20 @@
   <h3><a name="Contact"></a>Contact</h3>
   <p>Feel free to drop a hello or a compliment :P or a review :D or a possible collaboration ;)</p>
 
-          <form class="form-horizontal">
+   <div id="error"><? echo $error.$successMessage; ?></div>
+
+          <form action="mail.php" method="POST" class="form-horizontal">
             <div class="form-group">
-              <label for="exampleInputName1">Name</label>
-              <input type="text" class="form-control" id="exampleInputName2" placeholder="Your Name Here">
-              <label for="subjectInput">Subject</label>
-              <input type="text" class="form-control" placeholder="Re:">  
+              <label for="name">Name</label>
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name Here">
+              <label for="email">Email</label>
+              <input type="email" name="email" class="form-control" id="example" placeholder="Your Email Here">
+              <label for="subject">Subject</label>
+              <input type="text" name="subject" class="form-control" id="subject" placeholder="Re:">  
               <label for="textInput">Message</label>
-              <textarea class="form-control" rows="10" placeholder="Your Message Here"></textarea>
+              <textarea name="message" class="form-control" id="content" name="content" rows="10" placeholder="Your Message Here"></textarea>
             </div>  
-            <button type="button" class="btn btn-success">Send</button>
+            <button type="submit" id="submit" name="submit" class="btn btn-success">Send</button>
           </form>
     </div>
 
