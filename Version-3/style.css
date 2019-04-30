@@ -47,7 +47,7 @@ body{
 
 }
 
-.about-section p{
+.aboutme img, p{
 	color: white;
 	text-align: center;
 }
@@ -113,4 +113,65 @@ footer{
 
 .footer-copyright{
 	color: white;
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .parallax img{
+	height: 75%;
+  }
+  .parallax h1{
+	position: absolute;
+	top: 350px;
+	font-size: 100px;
+	color: white;
+  }
+
+  /*.about-section p{
+	color: white;
+	width: 50%;	
+}*/
+
+  .aboutme img, p{
+  	display: inline-flex;
+  	width: 50%;
+	color: white;
+	float: left;	
+}
+
+  .aboutme p{
+  	font-size: 25px;
+  }
+  
+  .portfolio img{
+  	margin-right: 5px;
+  	margin-left: 5px;
+  	margin-bottom: 10px;
+  }
+
+  .contact-form h3{
+  	margin-bottom: 40px;
+  }
+  .contact-form p{
+  	/*display: flex;*/
+  	width: 250%;
+  	font-size: 23px;
+  	letter-spacing: 2.5px;
+    vertical-align: 20px;
+    text-align: center;
+
+  }
+
+  .contact-form img.svg{
+  	display: none;
+  	
+  }
+
+  
+  
 }
