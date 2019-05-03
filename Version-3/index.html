@@ -16,7 +16,7 @@
   </head>
   <body>
   
-  <div class="container">
+  
     <!-- BS4 Navbar -->
   <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
 
@@ -46,7 +46,7 @@
     </ul>
   </div>
 </nav>
-  </div>
+  
   
 
 <div class="container parallax">
@@ -55,9 +55,10 @@
 </div>
 
 <!-- About Me Section -->
-<div class="container about-section">
-  <h1>About Me</h1>
+<div class="about-section">
+  
   <div class="aboutme">
+  <h1>About Me</h1>
   <img src="about-me-img.png">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Risus in hendrerit gravida rutrum quisque. Risus quis varius quam quisque id diam vel. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Semper eget duis at tellus at. Sed libero enim sed faucibus turpis. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Amet facilisis magna etiam tempor orci. Vitae nunc sed velit dignissim sodales. Eget mi proin sed libero enim sed faucibus turpis</p>
   </div>  
@@ -66,19 +67,15 @@
 <!-- Portfolio Section -->
 
 <div class="portfolio">
-  <h2>PORTFOLIO</h2>
+    <h2>PORTFOLIO</h2>
+  </div>
+  
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
   <button class="btn" onclick="filterSelection('nature')"> Nature</button>
   <button class="btn" onclick="filterSelection('cars')"> Cars</button>
   <button class="btn" onclick="filterSelection('people')"> People</button>
 </div>
-
-<!-- <div class=images-stack>
-  <img src="b-w-1.jpeg">
-  <img src="b-w-1.jpeg">
-  <img src="b-w-1.jpeg">
-</div> -->
 
 <!-- Portfolio Gallery Grid -->
 <div class="row">
@@ -98,15 +95,15 @@
     </div>
   </div>
   </div>
-
-
-  
 </div>
 
 <!-- Contact Section -->
 <div class="container contact-form">
-  <h3><a name="Contact"></a>Contact</h3>
-  <p>Feel free to drop a hello <img class="svg" src="thumb-up.svg"> or a compliment <img class="svg" src="tongue-out.svg"> or a review <img class="svg" src="laugh.svg"> or a possible collaboration <img class="svg" src="smile.svg"></p>
+  <div class="contact-div">
+    <h3><a name="Contact"></a>Contact</h3>
+    <p>Feel free to drop a hello <img class="svg" src="thumb-up.svg"> or a compliment <img class="svg" src="tongue-out.svg"> or a review <img class="svg" src="laugh.svg"> or a possible collaboration <img class="svg" src="smile.svg"></p>
+  </div>
+  
 
    <div id="error"><? echo $error.$successMessage; ?></div>
 
