@@ -1,0 +1,215 @@
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	display: grid;
+	border: 5px solid red;
+	grid-template-rows: 50px 400px 400px 900px 400px;
+	background-color: black;
+	/*grid-gap: 5px;*/
+
+}
+
+.item{
+	border: 1px solid pink;
+	text-align: center;
+
+}
+
+.herobox{
+	display: grid;
+	grid-template-columns: 40% 60%;
+	background-image: url("b-w-1.jpeg");
+	
+	/* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  height: 100%;
+}
+
+.caption{
+	border: 1px solid red;
+}
+
+.aboutme{
+	display: grid;
+	grid-template-rows: 20% 80%;
+}
+
+.aboutme h2{
+	border: 1px solid blue;
+}
+
+.aboutme-image-text{
+	display: grid;
+	border: 1px solid red;
+	grid-template-rows: 50% 50%;
+}
+
+.aboutme-image{
+	border: 1px solid blue;
+}
+
+.aboutme-text{
+   border: 1px solid red;
+}
+
+.portfolio{
+	display: grid;
+	grid-template-rows: 20% 80%;
+}
+
+.portfolio-heading h2{
+	border: 1px solid blue;
+}
+
+.portfolio-pictures{
+	display: grid;
+	grid-template-columns: 33.33% 33.33% 33.33%;
+	grid-template-rows: 25% 25% 25% 25%;
+	grid-gap: 5px;
+	margin-left: 5px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.portfolio-picture{
+	border: 1px solid red;
+	margin-bottom: 5px;
+}
+
+.contact{
+	text-align: center;
+}
+
+/*ipad responsiveness*/
+@media (min-width: 768px) and (max-width: 834px) {
+
+	.container{
+	display: grid;
+	
+	grid-template-rows: 50px 400px 1200px 1400px 750px;
+	
+
+}
+
+	.herobox .caption h1{
+	   font-size: 85px;
+	   color: white;
+    }
+
+    .aboutme-image-text{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 50% 50%;
+}
+   
+    .aboutme p{
+	font-size: 18px;
+}
+
+
+   .portfolio{
+	margin-top: 10px;
+	grid-template-rows: 10% 90%;
+}
+
+   .portfolio-pictures{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+	grid-gap: 5px;
+	margin-left: 5px;
+	margin-right: 10px;
+	margin-bottom: 25px;
+}
+
+  .display-div{
+  	display: none;
+  }
+
+
+
+
+  }
+
+  /*iphone responsiveness*/
+@media (min-width: 300px) and (max-width: /*834*/450px) {
+
+	.container{
+	display: grid;
+	
+	grid-template-rows: 50px 400px 1200px 2500px 1200px;
+	
+
+}
+
+	.herobox .caption h1{
+	   font-size: 50px;
+	   color: white;
+	   position: absolute;
+	   top: 150px;
+    }
+
+    .aboutme-image-text{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 50% 50%;
+}
+   
+   .aboutme-heading h2{
+   	text-align: center;
+   }
+
+   .aboutme-image img{
+   	width: 100%;
+   	height: 100%;
+   	margin-left: 20px
+   }
+   
+    .aboutme p{
+	font-size: 15px;
+	justify-content: center;
+}
+
+   .portfolio{
+	margin-top: 10px;
+	grid-template-rows: 5% 95%;
+}
+
+   .portfolio-pictures{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33% 8.33%;
+	width: 100%;
+	height: 100%;
+	grid-gap: 5px;
+	margin-left: 5px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+  .display-div{
+  	display: none;
+  }
+
+  .svg{
+	width: 5%;
+}
+
+.contact{
+	margin-top: 100px;
+}
+
+
+  }
+
+
