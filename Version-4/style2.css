@@ -1,53 +1,13 @@
 
 
-/*.site{
-	display: grid;
-	border: 1px solid red;	
-	
-}
-
-
-
-.header{
-	border: 1px solid blue;
-}
-
-.herobox{
-	border: 1px solid gray;	
-	display: grid;
-	grid-template-columns: 25% 100%;
-}
-
-
-.aboutme{
-	border: 1px solid yellow;
-	display: grid;
-	grid-template-rows: 20px 380px;
-	grid-template-columns: 50% 50%;
-
-}
-
-.portfolio{
-	border: 1px solid pink;
-    display: grid;
-	grid-template-rows: 300px 300px;
-	grid-template-columns: 33.33% 33.33% 33.33%;
-	
-}
-
-.portfolio-image{
-	border: 1px dashed red;
-}
-
-.contact{
-	border: 1px solid black;
-}
-*/
-
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+body{
+background: #000000;  
 }
 
 .container{
@@ -64,10 +24,29 @@
 
 }
 
+.navbar li:hover{
+	text-decoration: underline;
+	color: white;
+}
+
 .item{
 	/*border: 1px solid pink;*/
 	text-align: center;
+}
 
+.fa-instagram{
+
+		display: inline-block;
+		text-align: center;
+		color: #fff;
+		font-size: 25px;
+		line-height: 25px;
+		border-radius: 40px;
+		vertical-align: middle;
+		background: #d6249f;
+		background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+		box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+	
 }
 
 .herobox{
@@ -84,9 +63,7 @@
   height: 100%;
 }
 
-/*.caption{
-	border: 1px solid red;
-}*/
+
 
 .herobox .caption h1{
 	font-size: 100px;
@@ -161,7 +138,7 @@
 
 
 .contact{
-	margin-top: 50px;
+	margin-top: 100px;
 	grid-template-rows: 20% 80%;
 }
 
